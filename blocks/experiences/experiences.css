@@ -1,0 +1,76 @@
+.section.experiences-container {
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+.exp-heading-text {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.exp-main-row {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exp-left-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* tight spacing */
+}
+
+.exp-title-col p strong {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.exp-subtitle-row p strong {
+  font-size: 20px;
+  margin: 0;
+  margin-top: -165px;
+  color: #000
+}
+
+.exp-btn-row {
+  margin-top: -150px;
+}
+
+.exp-btn {
+  display: inline-block;
+  padding: 5px 157px;   /* wider button */
+  border: 2px solid #000;
+  border-radius: 50px;  /* perfect pill shape */
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000 !important;          /* text black */
+  background: transparent; /* transparent background */
+  transition: .2s ease;
+}
+
+.exp-btn:hover {
+  background: #000;
+  color: #000;
+}
+
+
+/* Responsive */
+@media(max-width: 900px){
+  .exp-main-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .exp-subtitle-row,
+  .exp-btn-row {
+    text-align: center;
+  }
+}
+
