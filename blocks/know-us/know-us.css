@@ -1,0 +1,34 @@
+:root { --link-color: #035fe6; --link-hover-bg-color: #63b0ff; --link-hover-color: #136ff6; --background-color: white; --light-color: #eee; --dark-color: #ccc; --text-color: black; --black-olive: #3f3f3f; --bright-blue: #007cc3; --dark-denim: #00578a; --off-white: #dfe1e2; --footer-grey-text-color: #3f3f3f; --scrollbar-thumb-color: #ffffff4d; --scrollbar-shadow-color: #0000004d; --scrollbar-thumb-shadow-color: #0000007f; --footer-links-bg-color: #f8f8f8; --footer-links-link-color: #3f3f3f; --country-dropdown-grey-color: #7e7e7e; --grey-color: #e1e1e180; --subscription-bg-brown-color: #ab6604; --subscription-bg-topaz-color: #2f1113; --light-green-color: #1ed760; --btn-border-color: #df9926; --body-font-color: var(--black-olive); --button-bg-color: #0271b1; --button-font-color: white; --silver: #a9aeb1; --charleston-green: #282828; --gray: #808080; --dark-gunmetal: #212529; --navy-blue: #0c1220; --light-sky-blue: #d5eff9; --grey: #999; --grey-light: #f5f6f7; --orange: #f16c51; --grey-lighter: #707070; --dark-slate-gray: #3d4551; --spring-green: #00b28f; --body-font-family: myriad-pro, arial; --heading-font-family: tungstenw05-medium, oswald, sans-serif; --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono",
+    monospace; --body-font-size-xl: 24px; --body-font-size-l: 22px; --body-font-size-m: 20px; --body-font-size-s: 18px; --body-font-size-xs: 16px; --body-font-size-xxs: 14px; --font-weight-small: 300; --font-weight-regular: 400; --font-weight-medium: 500; --font-weight-semibold: 600; --font-weight-bold: 700; --font-weight-bolder: 800; --font-weight-boldest: 900; --base-font-size: 8px; --heading-font-size-xxl: calc(4.6 * var(--base-font-size)); --heading-font-size-xl: calc(3.6 * var(--base-font-size)); --heading-font-size-l: calc(3 * var(--base-font-size)); --heading-font-size-m: calc(2.4 * var(--base-font-size)); --heading-font-size-s: calc(1.8 * var(--base-font-size)); --heading-font-size-xs: calc(1.2 * var(--base-font-size)); --nav-height: 6.573rem; --content-width: 1263px; --padding-inline: 0px; }
+
+@media (width >= 376px) {
+:root { --heading-font-size-xxl: calc(5.6 * var(--base-font-size)); --heading-font-size-xl: 4.14rem; }
+}
+
+@media (width >= 768px) {
+:root { --heading-font-size-xxl: calc(8 * var(--base-font-size)); --heading-font-size-xl: 6.3rem; --nav-height: 7.516rem; }
+}
+
+@media (width >= 992px) {
+:root { --base-font-size: 8px; --heading-font-size-xxl: calc(8 * var(--base-font-size)); --heading-font-size-xl: calc(7 * var(--base-font-size)); --heading-font-size-l: calc(3 * var(--base-font-size)); --heading-font-size-m: calc(2.4 * var(--base-font-size)); --heading-font-size-s: calc(1.8 * var(--base-font-size)); --heading-font-size-xs: calc(1.35 * var(--base-font-size)); --nav-height: 6.68rem; }
+}
+
+@media (width >= 1601px) {
+:root { --base-font-size: 10px; --heading-font-size-xxl: calc(8 * var(--base-font-size)); --heading-font-size-xl: calc(7 * var(--base-font-size)); --heading-font-size-l: calc(3 * var(--base-font-size)); --heading-font-size-m: calc(2.4 * var(--base-font-size)); --heading-font-size-s: calc(1.8 * var(--base-font-size)); --heading-font-size-xs: calc(1.2 * var(--base-font-size)); --nav-height: 8.4rem; }
+}
+
+*, ::before, ::after { box-sizing: inherit; }
+
+html { scroll-behavior: smooth; box-sizing: border-box; font-size: 10px; }
+
+body { font-size: var(--body-font-size-m); margin: 0px; font-family: var(--body-font-family); line-height: 1.45; color: var(--text-color); background-color: var(--background-color); display: none; }
+
+h1, h2, h3, h4, h5, h6 { font-family: var(--heading-font-family); font-weight: 500; line-height: 1.25; margin-top: 1em; margin-bottom: 0.5em; scroll-margin: calc(var(--nav-height) + 1em); }
+
+h2 { font-size: var(--heading-font-size-xl); }
+
+p, dl, ol, ul, pre, blockquote { margin-top: 1em; margin-bottom: 1em; }
+
+@media (width > 1210px) {
+.section > div, .section > div > div { margin: auto; }
+}
