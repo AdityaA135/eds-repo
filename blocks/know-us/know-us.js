@@ -2,6 +2,7 @@ import { createAemElement } from "../../scripts/aem.js";
 
 export default async function decorate(block) {
 
+  console.log("we are inside block, ",block);
   var VAR_ROW_1_COL_1 = (function(){
     var tbl = block.querySelector("table");
     if(!tbl) return "";
