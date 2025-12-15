@@ -31,7 +31,7 @@ export default async function decorate(block) {
                     <div class="row text-center text-md-start mb-5">
                         <div class="col-12 mb-4 mb-md-0 wow fadeInLeft animatedBlock" data-wow-delay="0.2s" style="transition-delay: 0.2s; animation-delay: 0.2s;">
                             <span class="text-primary-600 d-block text-uppercase mb-3">${title}</span>
-                            <h2 class="h5-head fw-500 mb-30">${sub_heading}</h2>
+                            <h2 class="h5-head fw-500 mb-30">${subHeading}</h2>
                         </div>
 
                         <div class="col-md-6 col-12 mb-4 mb-md-0 wow fadeInLeft animatedBlock" data-wow-delay="0.2s" style="transition-delay: 0.2s; animation-delay: 0.2s;">
