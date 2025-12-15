@@ -1,4 +1,5 @@
 export default async function decorate(block) {
+    console.log("iside descorate");
     const title = (function(){
       const tbl = block.querySelector("table");
       if(!tbl) return "";
