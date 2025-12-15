@@ -38,7 +38,7 @@ export default async function decorate(block) {
     })();
 
     console.log("title: ",title);
-    console.log("sub heading: ",sub_heading;
+    console.log("sub heading: ",sub_heading);
     console.log("Desc: ",desc);
     // Clear old authored HTML
     block.innerHTML = "";
