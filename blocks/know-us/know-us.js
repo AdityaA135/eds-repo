@@ -15,7 +15,7 @@ export default async function decorate(block) {
     rows?.[1]?.children?.[1]?.textContent?.trim() || "";
 
     console.log("title: ",title);
-    console.log("sub heading: ",sub_heading);
+    console.log("sub heading: ",subHeading);
     console.log("Desc: ",desc);
     // Clear old authored HTML
     block.innerHTML = "";
