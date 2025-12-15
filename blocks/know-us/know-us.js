@@ -1,32 +1,13 @@
 export default async function decorate(block) {
     console.log("iside descorate");
-    const title = (function(){
-      const tbl = block.querySelector("table");
-      if(!tbl) return "";
-      const rows = tbl.rows || [];
-      const cellObj = (rows[0] && rows[0].cells && rows[0].cells[0])
-        ? rows[0].cells[0]
-        : null;
-      return cellObj ? cellObj.textContent.trim() : "";
-    })();
-    const sub_heading = (function(){
-      const tbl = block.querySelector("table");
-      if(!tbl) return "";
-      const rows = tbl.rows || [];
-      const cellObj = (rows[0] && rows[0].cells && rows[0].cells[1])
-        ? rows[0].cells[1]
-        : null;
-      return cellObj ? cellObj.textContent.trim() : "";
-    })();
-    const desc = (function(){
-      const tbl = block.querySelector("table");
-      if(!tbl) return "";
-      const rows = tbl.rows || [];
-      const cellObj = (rows[1] && rows[1].cells && rows[1].cells[0])
-        ? rows[1].cells[0]
-        : null;
-      return cellObj ? cellObj.textContent.trim() : "";
-    })();
+    const table = block.querySelector("table");
+      if (!table) return; // ⬅ prevents null variables
+
+      const rows = table.rows;
+
+      const title = rows?.[0]?.cells?.[0]?.textContent?.trim() || "";
+      const subHeading = rows?.[0]?.cells?.[1]?.textContent?.trim() || "";
+      const desc = rows?.[1]?.cells?.[0]?.textContent?.trim() || "";
     const videoLink = (function(){
       const tbl = block.querySelector("table");
       if(!tbl) return "";
