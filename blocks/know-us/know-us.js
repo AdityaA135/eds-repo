@@ -1,22 +1,18 @@
 export default async function decorate(block) {
-    console.log("iside descorate");
-    const table = block.querySelector("table");
-      if (!table) return; // ⬅ prevents null variables
+  console.log("iside descorate");
+  const rows = [...block.children];
 
-      const rows = table.rows;
+  const title =
+    rows?.[0]?.children?.[0]?.textContent?.trim() || "";
 
-      const title = rows?.[0]?.cells?.[0]?.textContent?.trim() || "";
-      const subHeading = rows?.[0]?.cells?.[1]?.textContent?.trim() || "";
-      const desc = rows?.[1]?.cells?.[0]?.textContent?.trim() || "";
-    const videoLink = (function(){
-      const tbl = block.querySelector("table");
-      if(!tbl) return "";
-      const rows = tbl.rows || [];
-      const cellObj = (rows[1] && rows[1].cells && rows[1].cells[1])
-        ? rows[1].cells[1]
-        : null;
-      return cellObj ? cellObj.textContent.trim() : "";
-    })();
+  const subHeading =
+    rows?.[0]?.children?.[1]?.textContent?.trim() || "";
+
+  const desc =
+    rows?.[1]?.children?.[0]?.textContent?.trim() || "";
+
+  const videoLink =
+    rows?.[1]?.children?.[1]?.textContent?.trim() || "";
 
     console.log("title: ",title);
     console.log("sub heading: ",sub_heading);
