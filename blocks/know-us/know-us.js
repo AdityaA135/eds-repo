@@ -1,27 +1,19 @@
 export default async function decorate(block) {
-  console.log("iside descorate");
-  const rows = [...block.children];
+      const rows = [...block.children];
+       const title = rows?.[0]?.children?.[0]?.textContent?.trim() || "";
+   const subheading = rows?.[0]?.children?.[1]?.textContent?.trim() || "";
+   const desc = rows?.[1]?.children?.[0]?.textContent?.trim() || "";
+   const videolink = rows?.[1]?.children?.[1]?.textContent?.trim() || "";
 
-  const title =
-    rows?.[0]?.children?.[0]?.textContent?.trim() || "";
 
-  const subHeading =
-    rows?.[0]?.children?.[1]?.textContent?.trim() || "";
 
-  const desc =
-    rows?.[1]?.children?.[0]?.textContent?.trim() || "";
+      // Clear old authored HTML
+      block.innerHTML = "";
 
-  const videoLink =
-    rows?.[1]?.children?.[1]?.textContent?.trim() || "";
+      // Inject the generated HTML
+      block.innerHTML = `<div class="section know-us-container" data-section-status="loaded" style="">
 
-    console.log("title: ",title);
-    console.log("sub heading: ",subHeading);
-    console.log("Desc: ",desc);
-    // Clear old authored HTML
-    block.innerHTML = "";
-
-    // Inject the generated HTML
-    block.innerHTML = `<div class="section know-us-container" data-section-status="loaded" style="">
+      <div class="know-us-wrapper"><div class="know-us block" data-block-name="know-us" data-block-status="loaded"><div class="section know-us-container" data-section-status="loaded" style="">
 
       <div class="know-us-wrapper"><div class="know-us block" data-block-name="know-us" data-block-status="loaded"><div class="section know-us-container" data-section-status="loaded" style="">
 
@@ -31,7 +23,7 @@ export default async function decorate(block) {
                     <div class="row text-center text-md-start mb-5">
                         <div class="col-12 mb-4 mb-md-0 wow fadeInLeft animatedBlock" data-wow-delay="0.2s" style="transition-delay: 0.2s; animation-delay: 0.2s;">
                             <span class="text-primary-600 d-block text-uppercase mb-3">${title}</span>
-                            <h2 class="h5-head fw-500 mb-30">${subHeading}</h2>
+                            <h2 class="h5-head fw-500 mb-30">${subheading}</h2>
                         </div>
 
                         <div class="col-md-6 col-12 mb-4 mb-md-0 wow fadeInLeft animatedBlock" data-wow-delay="0.2s" style="transition-delay: 0.2s; animation-delay: 0.2s;">
@@ -44,5 +36,5 @@ export default async function decorate(block) {
                         </div>
                     </div>
                 </article>
-            </section></div></div></div></div></div></div>`;
+            </section></div></div></div></div></div></div></div></div></div>`;
   }
