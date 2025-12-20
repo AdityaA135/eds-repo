@@ -13,7 +13,7 @@ export default async function decorate(block) {
 
         const apac_image_SRC = apac_image?.getAttribute('src') || "";
         const apac_image_ALT = apac_image?.getAttribute('alt') || "";
-
+        console.log(title," , ",desc," , ",apac_image_SRC);
 
 
       // Clear old authored HTML
