@@ -14,8 +14,8 @@ export default async function decorate(block) {
           rows?.[1]?.children?.[0]?.textContent?.trim() || "";
 
         const agent1_img =
-          rows?.[1]?.querySelector('picture img') ||
-          rows?.[1]?.querySelector('img');
+          rows?.[1]?.children?.[1]?.querySelector('picture img') ||
+          rows?.[1]?.children?.[1]?.querySelector('img');
 
         const agent1_img_SRC = agent1_img?.getAttribute('src') || "";
         const agent1_img_ALT = agent1_img?.getAttribute('alt') || "";
@@ -27,8 +27,8 @@ export default async function decorate(block) {
           rows?.[2]?.children?.[0]?.textContent?.trim() || "";
 
         const agent2_img =
-          rows?.[2]?.querySelector('picture img') ||
-          rows?.[2]?.querySelector('img');
+          rows?.[2]?.children?.[1]?.querySelector('picture img') ||
+          rows?.[2]?.children?.[1]?.querySelector('img');
 
         const agent2_img_SRC = agent2_img?.getAttribute('src') || "";
         const agent2_img_ALT = agent2_img?.getAttribute('alt') || "";
@@ -40,8 +40,8 @@ export default async function decorate(block) {
           rows?.[3]?.children?.[0]?.textContent?.trim() || "";
 
         const agent3_img =
-          rows?.[3]?.querySelector('picture img') ||
-          rows?.[3]?.querySelector('img');
+          rows?.[3]?.children?.[1]?.querySelector('picture img') ||
+          rows?.[3]?.children?.[1]?.querySelector('img');
 
         const agent3_img_SRC = agent3_img?.getAttribute('src') || "";
         const agent3_img_ALT = agent3_img?.getAttribute('alt') || "";
@@ -49,8 +49,12 @@ export default async function decorate(block) {
         const agent3_desc =
           rows?.[3]?.children?.[2]?.textContent?.trim() || "";
 
-        const agent4_img =
+        const agent4 =
           rows?.[4]?.children?.[0]?.textContent?.trim() || "";
+
+        const agent4_img =
+          rows?.[4]?.children?.[1]?.querySelector('picture img') ||
+                    rows?.[4]?.children?.[1]?.querySelector('img');
 
         const agent4_desc =
           rows?.[4]?.children?.[2]?.textContent?.trim() || "";
