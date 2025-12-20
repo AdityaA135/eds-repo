@@ -56,6 +56,9 @@ export default async function decorate(block) {
           rows?.[4]?.children?.[1]?.querySelector('picture img') ||
                     rows?.[4]?.children?.[1]?.querySelector('img');
 
+        const agent4_img_SRC = agent4_img?.getAttribute('src') || "";
+        const agent4_img_ALT = agent4_img?.getAttribute('alt') || "";
+
         const agent4_desc =
           rows?.[4]?.children?.[2]?.textContent?.trim() || "";
 
