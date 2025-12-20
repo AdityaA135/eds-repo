@@ -1,0 +1,67 @@
+html { font-family: sans-serif; text-size-adjust: 100%; }
+
+body { margin: 0px; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+img { border: 0px; }
+
+* { box-sizing: border-box; }
+
+html { font-size: 10px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); }
+
+img { vertical-align: middle; }
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img { display: block; max-width: 100%; height: auto; }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; }
+
+.h1, .h2, .h3, h1, h2, h3 { margin-top: 20px; margin-bottom: 10px; }
+
+.h2, h2 { font-size: 30px; }
+
+p { margin: 0px 0px 10px; }
+
+.container { padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+
+.row { margin-right: -15px; margin-left: -15px; }
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 { position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; }
+
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 { float: left; }
+
+.col-xs-12 { width: 100%; }
+
+.animated, .zoomIn { animation-duration: 1s; animation-fill-mode: both; }
+
+.animated { animation-duration: 1s; animation-fill-mode: both; }
+
+.fadeInUp { animation-name: fadeInUp; }
+
+body, html { background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: myriad-pro, Arial; font-size: 18px; font-weight: 300; padding: 0px; margin: 0px; }
+
+.pt-75, .py-75 { padding-top: 75px !important; }
+
+.pb-75, .py-75 { padding-bottom: 75px !important; }
+
+.pt-75, .py-75 { padding-top: 75px !important; }
+
+.pb-75, .py-75 { padding-bottom: 75px !important; }
+
+.color-white { color: rgb(255, 255, 255) !important; }
+
+.overview-para { font-size: 24px; }
+
+.overview-head { font-size: 80px; line-height: 0.8; font-family: tungstenw05-medium, Oswald, sans-serif; margin: 0px 0px 20px; }
+
+.color-white, .white-color { color: rgb(255, 255, 255) !important; }
+
+.d-flex-center { display: flex; align-items: center; }
+
+.overview-para { font-size: 20px !important; }
+
+#theme { background-image: url("/content/dam/infosys-web/en/confluence/images/2024/us/confluence-theme.png"); background-repeat: no-repeat; background-size: cover; background-position: center center; padding-top: 20px; align-items: center; }
+
+.container { position: relative; }
