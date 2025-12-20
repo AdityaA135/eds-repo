@@ -8,8 +8,8 @@ export default async function decorate(block) {
           rows?.[0]?.children?.[1]?.textContent?.trim() || "";
 
         const apac_image =
-          rows?.[0]?.children?.[${c}]?.querySelector('picture img') ||
-          rows?.[0]?.children?.[${c}]?.querySelector('img');
+          rows?.[0]?.children?.[2]?.querySelector('picture img') ||
+          rows?.[0]?.children?.[2]?.querySelector('img');
 
         const apac_image_SRC = apac_image?.getAttribute('src') || "";
         const apac_image_ALT = apac_image?.getAttribute('alt') || "";
