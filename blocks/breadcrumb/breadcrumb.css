@@ -1,0 +1,20 @@
+.breadcrumb ol {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  margin-left: 8px;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
