@@ -1,4 +1,3 @@
-
 export default function decorate(block) {
 
   const rows = [...block.children];
@@ -35,7 +34,7 @@ export default function decorate(block) {
 
   // MAIN WRAPPER
   const carousel = document.createElement('section');
-  carousel.className = 'hero-carousel';
+  carousel.className = 'hero-carousel-dell-hero-block';
 
   // CREATE SLIDES
   slides.forEach((slide, index) => {
@@ -43,33 +42,33 @@ export default function decorate(block) {
     const slideEl = document.createElement('div');
 
     slideEl.className =
-      `hero-slide ${index === 0 ? 'active' : ''} ${
-        index % 2 === 0 ? 'dark-theme' : 'light-theme'
+      `hero-slide-dell-hero-block ${index === 0 ? 'active' : ''} ${
+        index % 2 === 0 ? 'dark-theme-dell-hero-block' : 'light-theme-dell-hero-block'
       }`;
 
     slideEl.innerHTML = `
-      <div class="hero-content">
+      <div class="hero-content-dell-hero-block">
 
-        <p class="eyebrow">
+        <p class="eyebrow-dell-hero-block">
           ${slide.eyebrow || ''}
         </p>
 
-        <h1>
+        <h1 class="title-dell-hero-block">
           ${slide.title || ''}
         </h1>
 
-        <p class="desc">
+        <p class="desc-dell-hero-block">
           ${slide.description || ''}
         </p>
 
-        <div class="btn-wrap">
+        <div class="btn-wrap-dell-hero-block">
 
           ${
             slide.primaryText
               ? `
                 <a
                   href="${slide.primaryLink || '#'}"
-                  class="primary-btn"
+                  class="primary-btn-dell-hero-block"
                 >
                   ${slide.primaryText}
                 </a>
@@ -82,7 +81,7 @@ export default function decorate(block) {
               ? `
                 <a
                   href="${slide.secondaryLink || '#'}"
-                  class="outline-btn"
+                  class="outline-btn-dell-hero-block"
                 >
                   ${slide.secondaryText}
                 </a>
@@ -94,20 +93,20 @@ export default function decorate(block) {
 
       </div>
 
-      <div class="hero-image">
+      <div class="hero-image-dell-hero-block">
         <picture>
-  ${slide.mobileImage ? `
-    <source
-      media="(max-width: 768px)"
-      srcset="${slide.mobileImage}"
-    />
-  ` : ''}
+          ${slide.mobileImage ? `
+            <source
+              media="(max-width: 768px)"
+              srcset="${slide.mobileImage}"
+            />
+          ` : ''}
 
-  <img
-    src="${slide.image}"
-    alt="${slide.title || 'Hero Banner'}"
-  />
-</picture>
+          <img
+            src="${slide.image}"
+            alt="${slide.title || 'Hero Banner'}"
+          />
+        </picture>
       </div>
     `;
 
@@ -117,45 +116,44 @@ export default function decorate(block) {
   // CONTROLS
   const controls = document.createElement('div');
 
-  controls.className = 'carousel-controls';
+  controls.className = 'carousel-controls-dell-hero-block';
 
   controls.innerHTML = `
-    <button class="nav-btn prev">
+    <button class="nav-btn-dell-hero-block prev-dell-hero-block">
       &#8592;
     </button>
 
-    <div class="slide-count">
-      <span class="current-slide">1</span>/${slides.length}
+    <div class="slide-count-dell-hero-block">
+      <span class="current-slide-dell-hero-block">1</span>/${slides.length}
     </div>
 
-    <button class="nav-btn next">
+    <button class="nav-btn-dell-hero-block next-dell-hero-block">
       &#8594;
     </button>
 
-    <button class="pause-btn">
+    <button class="pause-btn-dell-hero-block">
       ${pauseText} ||
     </button>
   `;
 
   carousel.append(controls);
-
   block.append(carousel);
 
-  // JS
+  // JS (SCOPED)
   const heroSlides =
-    block.querySelectorAll('.hero-slide');
+    block.querySelectorAll('.hero-slide-dell-hero-block');
 
   const nextBtn =
-    block.querySelector('.next');
+    block.querySelector('.next-dell-hero-block');
 
   const prevBtn =
-    block.querySelector('.prev');
+    block.querySelector('.prev-dell-hero-block');
 
   const currentSlideText =
-    block.querySelector('.current-slide');
+    block.querySelector('.current-slide-dell-hero-block');
 
   const pauseBtn =
-    block.querySelector('.pause-btn');
+    block.querySelector('.pause-btn-dell-hero-block');
 
   let currentSlide = 0;
   let autoPlay = true;
@@ -194,7 +192,6 @@ export default function decorate(block) {
   }
 
   nextBtn.addEventListener('click', nextSlide);
-
   prevBtn.addEventListener('click', prevSlide);
 
   setInterval(() => {
@@ -213,5 +210,4 @@ export default function decorate(block) {
       ? `${pauseText} ||`
       : `${playText} ▶`;
   });
-
 }

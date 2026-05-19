@@ -1,9 +1,4 @@
-/* ====================================
-   DELL HERO CAROUSEL
-   FULL IMAGE BACKGROUND VERSION
-==================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
 
 * {
   margin: 0;
@@ -36,7 +31,7 @@ main .section > div,
    MAIN CAROUSEL
 ========================= */
 
-.hero-carousel {
+.hero-carousel-dell-hero-block {
   position: relative;
 
   width: 100vw;
@@ -49,7 +44,7 @@ main .section > div,
    SLIDES
 ========================= */
 
-.hero-slide {
+.hero-slide-dell-hero-block {
   position: absolute;
   inset: 0;
 
@@ -64,7 +59,7 @@ main .section > div,
     visibility 0.8s ease;
 }
 
-.hero-slide.active {
+.hero-slide-dell-hero-block.active {
   opacity: 1;
   visibility: visible;
   z-index: 2;
@@ -74,7 +69,7 @@ main .section > div,
    FULL IMAGE
 ========================= */
 
-.hero-image {
+.hero-image-dell-hero-block {
   position: absolute;
   inset: 0;
 
@@ -84,7 +79,7 @@ main .section > div,
   z-index: 1;
 }
 
-.hero-image img {
+.hero-image-dell-hero-block img {
   width: 100%;
   height: 100%;
 
@@ -98,7 +93,7 @@ main .section > div,
    OVERLAY
 ========================= */
 
-.hero-slide::after {
+.hero-slide-dell-hero-block::after {
   content: '';
 
   position: absolute;
@@ -118,7 +113,7 @@ main .section > div,
 
 /* LIGHT SLIDE OVERLAY */
 
-.light-theme::after {
+.light-theme-dell-hero-block::after {
   background:
     linear-gradient(
       90deg,
@@ -133,7 +128,7 @@ main .section > div,
    CONTENT
 ========================= */
 
-.hero-content {
+.hero-content-dell-hero-block {
   position: relative;
   z-index: 5;
 
@@ -155,7 +150,7 @@ main .section > div,
    TYPOGRAPHY
 ========================= */
 
-.eyebrow {
+.eyebrow-dell-hero-block {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.3;
@@ -163,7 +158,7 @@ main .section > div,
   margin-bottom: 18px;
 }
 
-.hero-content h1 {
+.hero-content-dell-hero-block h1 {
   font-size: 58px;
   font-weight: 300;
   line-height: 1.04;
@@ -173,7 +168,7 @@ main .section > div,
   margin-bottom: 22px;
 }
 
-.desc {
+.desc-dell-hero-block {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.5;
@@ -185,15 +180,15 @@ main .section > div,
 
 /* TEXT COLORS */
 
-.dark-theme .eyebrow,
-.dark-theme h1,
-.dark-theme .desc {
+.dark-theme-dell-hero-block .eyebrow-dell-hero-block,
+.dark-theme-dell-hero-block h1,
+.dark-theme-dell-hero-block .desc-dell-hero-block {
   color: white;
 }
 
-.light-theme .eyebrow,
-.light-theme h1,
-.light-theme .desc {
+.light--dell-hero-block .eyebrow-dell-hero-block,
+.light-theme-dell-hero-block h1,
+.light-theme-dell-hero-block .desc-dell-hero-block {
   color: #111;
 }
 
@@ -201,15 +196,15 @@ main .section > div,
    BUTTONS
 ========================= */
 
-.btn-wrap {
+.btn-wrap-dell-hero-block {
   display: flex;
   flex-wrap: wrap;
 
   gap: 14px;
 }
 
-.primary-btn,
-.outline-btn {
+.primary-btn-dell-hero-block,
+.outline-btn-dell-hero-block {
   min-width: 165px;
   height: 48px;
 
@@ -229,32 +224,32 @@ main .section > div,
 
 /* DARK */
 
-.dark-theme .primary-btn {
+.dark-theme-dell-hero-block .primary-btn-dell-hero-block {
   background: white;
   color: #111;
 }
 
-.dark-theme .outline-btn {
+.dark-theme-dell-hero-block .outline-btn-dell-hero-block {
   background: rgba(255,255,255,0.92);
   color: #000000;
 }
 
 /* LIGHT */
 
-.light-theme .primary-btn {
+.light-theme-dell-hero-block .primary-btn-dell-hero-block {
   background: black;
   color: white;
 }
 
-.light-theme .outline-btn {
+.light-theme-dell-hero-block .outline-btn-dell-hero-block {
   background: rgba(255,255,255,0.92);
   color: #555;
 
   border: 1px solid #bbb;
 }
 
-.primary-btn:hover,
-.outline-btn:hover {
+.primary-btn-dell-hero-block:hover,
+.outline-btn-dell-hero-block:hover {
   transform: translateY(-2px);
 }
 
@@ -262,7 +257,7 @@ main .section > div,
    CONTROLS
 ========================= */
 
-.carousel-controls {
+.carousel-controls-dell-hero-block{
   position: absolute;
 
   right: 5%;
@@ -278,7 +273,7 @@ main .section > div,
 
 /* ARROWS */
 
-.nav-btn {
+.nav-btn-dell-hero-block {
   width: 46px;
   height: 46px;
 
@@ -295,7 +290,7 @@ main .section > div,
 
 /* COUNTER */
 
-.slide-count {
+.slide-count-dell-hero-block {
   height: 46px;
 
   padding: 0 18px;
@@ -314,7 +309,7 @@ main .section > div,
 
 /* PLAY BUTTON */
 
-.pause-btn {
+.pause-btn-dell-hero-block {
   height: 46px;
 
   padding: 0 22px;
@@ -337,19 +332,19 @@ main .section > div,
 
 @media (max-width: 1100px) {
 
-  .hero-carousel {
+  .hero-carousel-dell-hero-block {
     height: 600px;
   }
 
-  .hero-content {
+  .hero-content-dell-hero-block {
     width: 48%;
   }
 
-  .hero-content h1 {
+  .hero-content-dell-hero-block h1 {
     font-size: 46px;
   }
 
-  .desc {
+  .desc-dell-hero-block {
     font-size: 16px;
   }
 
@@ -361,13 +356,13 @@ main .section > div,
 
 @media (max-width: 768px) {
 
-  .hero-carousel {
+  .hero-carousel-dell-hero-block {
     height: 760px;
   }
 
   /* IMAGE BG STILL FULL */
 
-  .hero-slide::after {
+  .hero-slide-dell-hero-block::after {
     background:
       linear-gradient(
         180deg,
@@ -378,7 +373,7 @@ main .section > div,
       );
   }
 
-  .light-theme::after {
+  .light-theme-dell-hero-block::after {
     background:
       linear-gradient(
         180deg,
@@ -391,7 +386,7 @@ main .section > div,
 
   /* CONTENT */
 
-  .hero-content {
+  .hero-content-dell-hero-block {
     width: 100%;
     height: 100%;
 
@@ -403,20 +398,20 @@ main .section > div,
       26px;
   }
 
-  .eyebrow {
+  .eyebrow-dell-hero-block {
     font-size: 15px;
 
     margin-bottom: 14px;
   }
 
-  .hero-content h1 {
+  .hero-content-dell-hero-block h1 {
     font-size: 42px;
     line-height: 1.05;
 
     margin-bottom: 18px;
   }
 
-  .desc {
+  .desc-dell-hero-block {
     font-size: 16px;
     line-height: 1.45;
 
@@ -425,7 +420,7 @@ main .section > div,
 
   /* BUTTONS */
 
-  .btn-wrap {
+  .btn-wrap-dell-hero-block {
     flex-direction: column;
 
     gap: 10px;
@@ -433,8 +428,8 @@ main .section > div,
     margin-bottom: 22px;
   }
 
-  .primary-btn,
-  .outline-btn {
+  .primary-btn-dell-hero-block,
+  .outline-btn-dell-hero-block {
     width: 100%;
     min-width: unset;
 
@@ -445,26 +440,26 @@ main .section > div,
 
   /* CONTROLS */
 
-  .carousel-controls {
+  .carousel-controls-dell-hero-block {
     position: static;
 
     gap: 8px;
   }
 
-  .nav-btn {
+  .nav-btn-dell-hero-block {
     width: 42px;
     height: 42px;
 
     font-size: 15px;
   }
 
-  .slide-count {
+  .slide-count-dell-hero-block {
     height: 42px;
 
     font-size: 14px;
   }
 
-  .pause-btn {
+  .pause-btn-dell-hero-block {
     height: 42px;
 
     font-size: 13px;
@@ -480,11 +475,11 @@ a.button:hover, a.button:focus, button:hover, button:focus{
 }
 @media (max-width: 768px) {
 
-  .hero-carousel {
+  .hero-carouse-dell-hero-block {
     height: 760px;
   }
 
-  .hero-slide {
+  .hero-slide-dell-hero-block {
     position: absolute;
     inset: 0;
 
@@ -496,13 +491,13 @@ a.button:hover, a.button:focus, button:hover, button:focus{
 
   /* REMOVE DESKTOP OVERLAY */
 
-  .hero-slide::after {
+  .hero-slide-dell-hero-block::after {
     display: none;
   }
 
   /* IMAGE FIRST */
 
-  .hero-image {
+  .hero-image-dell-hero-block {
     position: relative !important;
 
     inset: unset !important;
@@ -517,7 +512,7 @@ a.button:hover, a.button:focus, button:hover, button:focus{
     z-index: 1;
   }
 
-  .hero-image img {
+  .hero-image-dell-hero-block img {
     width: 100%;
     height: 100%;
 
@@ -529,7 +524,7 @@ a.button:hover, a.button:focus, button:hover, button:focus{
 
   /* CONTENT SECOND */
 
-  .hero-content {
+  .hero-content-dell-hero-block {
     position: relative !important;
 
     width: 100%;
@@ -552,7 +547,7 @@ a.button:hover, a.button:focus, button:hover, button:focus{
 
   /* DARK */
 
-  .dark-theme .hero-content {
+  .dark-theme-dell-hero-block .hero-content-dell-hero-block {
     background:
       linear-gradient(
         180deg,
@@ -563,7 +558,7 @@ a.button:hover, a.button:focus, button:hover, button:focus{
 
   /* LIGHT */
 
-  .light-theme .hero-content {
+  .light-theme-dell-hero-block .hero-content-dell-hero-block {
     background:
       linear-gradient(
         180deg,
@@ -574,14 +569,14 @@ a.button:hover, a.button:focus, button:hover, button:focus{
 
   /* TYPOGRAPHY */
 
-  .eyebrow {
+  .eyebrow-dell-hero-block {
     font-size: 15px;
     font-weight: 300;
 
     margin-bottom: 14px;
   }
 
-  .hero-content h1 {
+  .hero-content-dell-hero-block h1 {
     font-size: 42px;
     font-weight: 300;
     line-height: 1.05;
@@ -591,7 +586,7 @@ a.button:hover, a.button:focus, button:hover, button:focus{
     margin-bottom: 18px;
   }
 
-  .desc {
+  .desc-dell-hero-block {
     font-size: 16px;
     line-height: 1.45;
 
@@ -600,7 +595,7 @@ a.button:hover, a.button:focus, button:hover, button:focus{
 
   /* BUTTONS */
 
-  .btn-wrap {
+  .btn-wrap-dell-hero-block {
     display: flex;
     flex-direction: column;
 
@@ -609,8 +604,8 @@ a.button:hover, a.button:focus, button:hover, button:focus{
     margin-bottom: 24px;
   }
 
-  .primary-btn,
-  .outline-btn {
+  .primary-btn-dell-hero-block,
+  .outline-btn-dell-hero-block {
     width: 100%;
     min-width: unset;
 
@@ -621,7 +616,7 @@ a.button:hover, a.button:focus, button:hover, button:focus{
 
   /* CONTROLS */
 
-  .carousel-controls {
+  .carousel-controls-dell-hero-block {
   position: relative !important;
 
   left: unset !important;
@@ -640,20 +635,20 @@ a.button:hover, a.button:focus, button:hover, button:focus{
   z-index: 20;
 }
 
-  .nav-btn {
+  .nav-btn-dell-hero-block {
     width: 42px;
     height: 42px;
 
     font-size: 15px;
   }
 
-  .slide-count {
+  .slide-count-dell-hero-block {
     height: 42px;
 
     font-size: 14px;
   }
 
-  .pause-btn {
+  .pause-btn-dell-hero-block {
     height: 42px;
 
     font-size: 13px;
@@ -661,11 +656,11 @@ a.button:hover, a.button:focus, button:hover, button:focus{
     padding: 0 16px;
   }
 
-  .hero-slide {
+  .hero-slide-dell-hero-block {
   padding-bottom: 120px;
 }
 
-.carousel-controls {
+.carousel-controls-dell-hero-block {
   position: absolute !important;
 
   left: 24px !important;
@@ -677,19 +672,19 @@ a.button:hover, a.button:focus, button:hover, button:focus{
 }
 }
 
-.pause-btn:focus,
-.nav-btn:focus {
+.pause-btn-dell-hero-block:focus,
+.nav-btn-dell-hero-block:focus {
   outline: none;
   background: black; /* or your intended color */
 }
 
-.hero-image picture {
+.hero-image-dell-hero-block picture {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.hero-image picture img {
+.hero-image-dell-hero-block picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -697,7 +692,7 @@ a.button:hover, a.button:focus, button:hover, button:focus{
   display: block;
 }
 
-.hero-content h1 {
+.hero-content-dell-hero-block h1 {
   font-weight: 100;
 }
 
