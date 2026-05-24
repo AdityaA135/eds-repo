@@ -1,0 +1,151 @@
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .tnt-firebat-container {
+        height: 625px;
+        align-items: end;
+    }
+}
+.tnt-firebat-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 794px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .tnt-firebat-video {
+        height: 291px;
+    }
+}
+.tnt-firebat-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: 0;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .tnt-firebat-video-controls {
+        bottom: 22rem;
+    }
+}
+.tnt-firebat-video-controls {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+.tnt-firebat-video-button {
+    cursor: pointer;
+    border: none;
+    background: 0 0;
+    padding: 0;
+    transition: transform .2s;
+}
+
+.tnt-firebat-video-button svg {
+    fill: #FFF;
+    filter: drop-shadow(0 0 .125rem rgba(0, 0, 0, .5));
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.tnt-firebat-video-button[aria-pressed=false] .tnt-firebat-video-button-play, .tnt-firebat-video-button[aria-pressed=true] .tnt-firebat-video-button-pause {
+    display: none;
+}
+.tnt-firebat-video-button svg {
+    fill: #FFF;
+    filter: drop-shadow(0 0 .125rem rgba(0, 0, 0, .5));
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/*Phone*/
+#uhp-ai-assitant, .hpg-hero-section-container .owl-carousel {
+    display: none !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .tnt-firebat-video {
+        height: 291px;
+    }
+}
+.tnt-firebat-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+     .tnt-firebat-video {
+         height: 291px;
+     }
+ }
+.tnt-firebat-video {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     -o-object-fit: cover;
+     object-fit: cover;
+     z-index: 0;
+ }
+ .tnt-firebat-video-button {
+     cursor: pointer;
+     border: none;
+     background: 0 0;
+     padding: 0;
+     transition: transform .2s;
+ }
+
+ .tnt-firebat-video-button svg {
+     fill: #FFF;
+     filter: drop-shadow(0 0 .125rem rgba(0, 0, 0, .5));
+     width: 2.5rem;
+     height: 2.5rem;
+ }
+
+ .tnt-firebat-video-button[aria-pressed=false] .tnt-firebat-video-button-play, .tnt-firebat-video-button[aria-pressed=true] .tnt-firebat-video-button-pause {
+     display: none;
+ }
+
+ .tnt-firebat-video-button svg {
+     fill: #FFF;
+     filter: drop-shadow(0 0 .125rem rgba(0, 0, 0, .5));
+     width: 2.5rem;
+     height: 2.5rem;
+ }
