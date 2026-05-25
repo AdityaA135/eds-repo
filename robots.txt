@@ -1,0 +1,8 @@
+User-agent: *
+
+Allow: /
+Disallow: /drafts/
+Disallow: /.helix/
+Disallow: /tools/
+
+Sitemap: https://main--eds-repo--adityaa135.aem.live/sitemap.xml
