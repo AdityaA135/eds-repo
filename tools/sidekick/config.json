@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    {
+      "id": "add-asset",
+      "title": "Add AEM Asset",
+      "url": "/tools/sidekick/plugins/add-asset.js",
+      "isVisible": true
+    }
+  ]
+}
+
